@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Poppins:wght@400;700&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(4, 4, 53);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: azure;
+      }
+
+      nav ul li a:hover {
+        color: rgb(127, 127, 232);
+        font-size: 1.02rem;
+      }
+
+      main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 0.8px;
+        margin: 40px 84px;
+      }
+
+      .left {
+        font-size: 1.5rem;
+      }
+
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 80px, 0;
+      }
+
+      .firstSection > div {
+        width: 30%;
+      }
+
+      .leftSection {
+        font-size: 3rem;
+      }
+
+      .leftSection .buttons {
+        padding: 50px 0;
+      }
+
+      .leftSection .btn {
+        background: #1a23d4;
+        background-image: -webkit-linear-gradient(top, #1a23d4, #1d529e);
+        background-image: -moz-linear-gradient(top, #1a23d4, #1d529e);
+        background-image: -ms-linear-gradient(top, #1a23d4, #1d529e);
+        background-image: -o-linear-gradient(top, #1a23d4, #1d529e);
+        background-image: linear-gradient(to bottom, #1a23d4, #1d529e);
+        -webkit-border-radius: 23;
+        -moz-border-radius: 23;
+        border-radius: 23px;
+        -webkit-box-shadow: 3px 3px 11px #0e194a;
+        -moz-box-shadow: 3px 3px 11px #0e194a;
+        box-shadow: 3px 3px 11px #0e194a;
+        font-family: "Montserrat", sans-serif;
+        font-family: "Poppins", sans-serif;
+        color: #ffffff;
+        font-size: 19px;
+        padding: 8px 20px 10px 20px;
+        text-decoration: none;
+      }
+
+      .leftSection .btn:hover {
+        background: #0857d6;
+        background-image: -webkit-linear-gradient(top, #0857d6, #008cff);
+        background-image: -moz-linear-gradient(top, #0857d6, #008cff);
+        background-image: -ms-linear-gradient(top, #0857d6, #008cff);
+        background-image: -o-linear-gradient(top, #0857d6, #008cff);
+        background-image: linear-gradient(to bottom, #0857d6, #008cff);
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .rightSection img {
+        width: 106%;
+        padding: 50px;
+      }
+
+      .purple {
+        color: rgb(154, 69, 233);
+      }
+
+      .text-gray {
+        color: gray;
+      }
+
+      #element {
+        color: rgb(154, 69, 233);
+      }
+
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+
+      .secondSection .box {
+        background: white;
+        width: 77vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 6vw;
+      }
+
+      .image-top {
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+        font-size: 14px;
+      }
+
+      .vertical-desc {
+        position: relative;
+        top: 86px;
+        color: gray;
+        width: 150px;
+        font-size: 9px;
+      }
+
+      footer {
+        background-color: #0e0e1a;
+      }
+
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+
+      .footer ul {
+        list-style: none;
+      }
+
+      .footer > div {
+        width: 223px;
+      }
+
+      footer .footer-rights {
+        text-align: center;
+        color: gray;
+        padding: 12px, 0;
+      }
+
+      @media screen and (max-width: 1400px) {
+        body {
+          /* background-color: red; */
+        }
+
+        .box {
+          flex-direction: column;
+        }
+
+        .secondSection .vertical {
+          height: unset;
+        }
+
+        .vertical-title,
+        .vertical-desc {
+          left: 45px;
+        }
+
+        .secondSection .box {
+          width: 50vw;
+        }
+
+        nav {
+          flex-direction: column;
+        }
+
+        footer {
+          display: none;
+        }
+
+        .firstSection {
+          flex-direction: column-reverse;
+        }
+
+        .leftSection {
+          width: 100% !important;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .secondSection {
+          height: 141vh;
+        }
+
+        .rightSection {
+          width: 721px !important;
+          display: flex;
+          align-items: center;
+        }
+
+        .rightSection img {
+          width: 45vw;
+          margin-bottom: 73px;
+        }
+
+        .image-top {
+          top: 122px;
+        }
+
+        .secondSection {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        body {
+          min-width: fit-content;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Dev's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          <div>Hi, My name is <span class="purple">Dev</span></div>
+          <div>and I am a</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit GitHub</button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="developer4.png" alt="" />
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="secondSection">
+        <span class="text-gray"> What I have done so far</span>
+        <h1>Past Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="pngegg.png" alt="" />
+            <div class="vertical-title">HTML - CSS Developer (2020-2021)</div>
+            <div class="vertical-desc">
+              As I did'nt knew much about coding back then, I startd with HTML.
+              Learned all the Basic Fundamentals of the Web Page. Understood the
+              structure of the Webpage and all the basic as well as complex
+              tags, which are used in making any Web Page or Web Application.
+              And, as my aim is to become a Full Stack Web Developer, it is
+              necessary to gain knowledge in this interesting field, which is
+              known as Cascading Style Sheets.(CSS)
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top" src="cppone.png.png" alt="" />
+            <div class="vertical-title">C++ Developer (2020-2021)</div>
+            <div class="vertical-desc">
+              Proficient in creating and compiling programs, handling variables,
+              loops, and conditional statements. Also delved into
+              object-oriented programming, confidently designing classes and
+              implementing inheritance and polymorphism. Well-versed in memory
+              management using pointers and proficient in file handling. Excited
+              for more challenges, I am eager to further enhance my skills as a
+              C++ developer.
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top" src="javanew.png" alt="" />
+            <div class="vertical-title">Java Developer (2021-2022)</div>
+            <div class="vertical-desc">
+              I am a motivated individual with a solid foundation in Java
+              programming, along with a strong understanding of Data Structures
+              and Algorithms (DSA) and Object-Oriented Programming (OOP).
+              Through dedicated learning and practice, I have gained proficiency
+              in Java's core concepts, syntax, and libraries, enabling me to
+              develop functional and efficient programs.
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top" src="jscript11.java.png" alt="" />
+            <div class="vertical-title">JavaScript Developer (2022-2023)</div>
+            <div class="vertical-desc">
+              With my knowledge of JavaScript, I can develop interactive and
+              responsive web applications, enhancing user experiences and adding
+              functionality to websites. I am also familiar with DOM
+              manipulation, allowing me to dynamically modify web page elements.
+              As I continue to learn and grow, I am excited to tackle more
+              challenging projects and contribute my skills to the ever-evolving
+              world of web development.
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top" src="react11.png" alt="" />
+            <div class="vertical-title">React Developer (2022-2023)</div>
+            <div class="vertical-desc">
+              With my knowledge of React, I can create dynamic and interactive
+              user interfaces, building modern and responsive web applications.
+              I am well-versed in managing component lifecycles and handling
+              events, enabling me to develop seamless and efficient front-end
+              solutions. As a continuous learner, I am always eager to explore
+              new React features and best practices, staying current with the
+              latest advancements in the React ecosystem. I am excited to
+              leverage my skills in future projects and contribute to the
+              exciting world of React development.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Dev's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-rights">© Dev Kulkarni | All Rights Reserved</div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Student", "React Developer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
